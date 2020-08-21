@@ -47,7 +47,7 @@ def verify():
     try:
         option = request.form['option']
         correct = correct_ans == option
-        return render_template('quiz.html',option=correct,correct=correct_ans)
+        return render_template('result.html',option=correct,correct=correct_ans)
     except Exception as e:
         print("ERROR ", e)
         return "ERROR"
