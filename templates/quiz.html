@@ -1,0 +1,36 @@
+
+{% extends "layout.html" %}
+{% block title %}
+          <title>Solve Quiz </title>
+{% endblock %}
+
+{% block content %}
+
+<Hello>
+	<br>
+	<br>
+	
+	<div class="container">
+  <div class="row">
+    <div class="col-sm">
+		<oi>
+	
+			<form action={{'verify'}}  method="POST">
+				<h2> {{ question }}</h2><br>
+				{% for x in all_answer %}
+					
+					<input type="submit" class="btn btn-outline-info btn-lg btn-block" name='option'  value={{x}}  >
+				{%endfor%}
+					
+			</form>
+			<hr>
+				
+</oi> 
+{% include 'result.html' %}
+		
+    </div>
+  </div>
+</div>
+		
+		
+{% endblock%}
