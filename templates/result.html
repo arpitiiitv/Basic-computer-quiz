@@ -6,9 +6,22 @@
 
 {% block content %}
 
-<h1>{{option}}</h1>
-<h3>Correct answer is {{correct}}</h3>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+
+    		<hr>
+<h3>You have selected {{option}} and right answer is {{correct}} .</h3>
+<hr>
+<h1> Your answer is {{res}}</h1>
+<hr>
 <a href="/"><h1>Back to Home </h1></a>
+<hr>
+
+
+    </div>
+  </div>
+</div>
 
 		
 {% endblock%}
